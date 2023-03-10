@@ -1,0 +1,252 @@
+
+  /* ............................................... */
+  body{
+    background-color: black;
+  }
+  .all{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+  }
+  h1{
+    color: #63fc8c;
+    text-align: center;
+    padding: 5px;
+  }
+  .body{
+    width: 300px;
+    height: 250px;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid red;
+}
+  .body h1{
+    color: #63fc8c;
+    text-align: center;
+    padding: 5px;
+}
+/* .................................................... */
+
+  /* insta logo  */
+  .main2 {
+    margin-left: 3rem;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(#8a3ab9, #bc2a8d, #fccc63);
+    border-radius: 40px;
+    position: relative;
+  }
+  .logo2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 10px solid white;
+    border-radius: 40px;
+  }
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 10px solid white;
+    border-radius: 50%;
+  }
+  .logo2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+
+/* git logo  */
+  .box1 {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(233, 131, 76);
+    border-radius: 20px;
+    transform: rotate(45deg);
+  }  
+  .line1 {
+    width: 140px;
+    height: 15px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+  }  
+  .line1::after {
+    content: "";
+    width: 100px;
+    height: 15px;
+    top: 40px;
+    left: 50px;
+    transform: rotate(50deg);
+    background-color: white;
+    position: absolute;
+  }  
+  .circle1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: -10px;
+  }  
+  .circle1::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+  }  
+  .circle1::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 70px;
+  }  
+
+  /* gitLogo end  */  
+
+  /* netflix start  */
+  .netflix3 {
+    margin-left: 5rem;
+    width: 50px;
+    height: 220px;
+    background-color: #b1060f;
+    position: relative;
+  }
+
+  .netflix3:before {
+    content: "";
+    width: 50px;
+    height: 220px;
+    background-color: #b60a12;
+    position: absolute;
+    z-index: 20;
+    left: 40px;
+    transform: skew(20deg);
+    box-shadow: 0 0 20px 1px black;
+  }
+  .netflix3:after {
+    content: "";
+    width: 50px;
+    height: 220px;
+    background-color: #b1060f;
+    position: absolute;
+    left: 80px;
+    z-index: 1;
+  }
+  .black3 {
+    width: 60px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -8px;
+    transform: rotateZ(-5deg);
+  }
+
+  .black3:before {
+    content: "";
+    width: 60px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -8px;
+    left: 75px;
+    transform: rotateZ(10deg);
+  }
+  /* netflix end  */
+
+  /* react logo start */
+  .main4 {
+    margin: 5rem 4rem;
+    width: 150px;
+    height: 40px;
+    border: 5px solid skyblue;
+    border-radius: 50%;
+    position: relative;
+    animation: rot 2s linear infinite;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .main4::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 5px solid skyblue;
+    border-radius: 50%;
+    transform: rotate(60deg);
+  }
+  .main4::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 5px solid skyblue;
+    border-radius: 50%;
+    transform: rotate(-60deg);
+  }
+  .dot4 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: skyblue;
+    position: absolute;
+    top: 10px;
+    left: 68px;
+  }
+
+  /* react logo end  */
+
+  /* youtube logo  */
+  .youtube {
+    margin: 4rem 5rem;
+    width: 150px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: #b1060f;
+    position: relative;
+  }
+
+  .youtube:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 40px solid rgb(255, 255, 255);
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: 60px;
+    top: 30px;
+  }
