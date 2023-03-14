@@ -185,16 +185,16 @@
     border: 5px solid skyblue;
     border-radius: 50%;
     position: relative;
-    animation: rot 2s linear infinite;
+    animation: rot 5s linear infinite;
   }
-  @keyframes rot {
+  /* @keyframes rot {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  }
+  } */
   .main4::after {
     content: "";
     width: 100%;
@@ -249,4 +249,40 @@
     position: absolute;
     left: 60px;
     top: 30px;
+  }
+
+
+  /* microsoft logo  */
+ 
+  .boxes1{
+    margin: 0 40px;
+    width: 100px;
+    height: 100px;
+    background-color: #d43131;
+    position: relative;
+  }
+  .boxes1::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #44aa08;
+    position: absolute;
+    top: 0;
+    left: 110px;
+  }
+  .boxes2{
+    margin: 10px 40px;
+    width: 100px;
+    height: 100px;
+    background-color: #18a7e9;
+    position: relative;
+  }
+  .boxes2::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    background-color: #c6b604;
   }
